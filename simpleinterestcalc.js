@@ -18,7 +18,7 @@ function compute()
     else{
         var inr = "If you deposit <mark>" + "$" + principal+"</mark><br>";
         var ra = "at an interest rate of <mark>" + rate+"%</mark><br>";
-        var am = "You will receive an amount of <mark>"+ "$" +interest+"</mark><br>";
+        var am = "You will receive an amount of <mark>"+ "$" +interest.toFixed(2)+"</mark><br>";
         var ye = "in the year <mark'>" + year +"</mark>"; 
         
         document.getElementById("result").innerHTML=inr+ra+am+ye;
